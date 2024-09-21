@@ -5,7 +5,6 @@ crime dataset for descriptive stats and visuals'''
 import zipfile
 from IPython.display import display
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 

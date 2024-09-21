@@ -7,7 +7,6 @@ numpy
 matplotlib
 
 pandas
-seaborn
 matplotlib
 plotly
 IPython
