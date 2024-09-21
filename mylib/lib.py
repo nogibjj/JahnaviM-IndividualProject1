@@ -8,7 +8,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-def read_zip(zip_file = 'Crime_Data_from_2020_to_Present.csv.zip', 
+def read_zip(zip_file = 'Crime_Data_from_2020_to_Present.csv.zip',
              csv_file = "Crime_Data_from_2020_to_Present.csv"):
     '''Read a zip file that is compressed from csv using pandas'''
     with zipfile.ZipFile(zip_file) as z:
@@ -32,17 +32,17 @@ def print_stats(df):
     display(df.describe())
     return df.describe()
 
-def plot_hist_Time_Occ(df):
+def plot_hist_time_occ(df):
     '''Plot a histogram of when the crimes occured in LA'''
     plt.figure(figsize = (15,6))
     h = (df['TimeOccHr']).hist(bins = 24)
-    h.set(xlabel = "Hour of Day", ylabel = "Crime Occurences", 
+    h.set(xlabel = "Hour of Day", ylabel = "Crime Occurences",
           title = "Distribution of Crime Occurences over Time of Day")
     plt.xticks(ticks = [2*i for i in range(13)])
     plt.show()
     return df['TimeOccHr'].shape
 
-def geo_plot_Crime_Rate(df):
+def geo_plot_crime_rate(df):
     '''Creat a geoplot of the crime rate in LA based on latitude/longitude location'''
     df_graph = df[df['LAT'] != 0].groupby(
         ['AREA NAME', 'LAT', 'LON']).count()[['DR_NO']].reset_index()
@@ -76,11 +76,11 @@ def geo_plot_Crime_Rate(df):
     fig.show()
     return df_graph
 
-def hist_plot_Vict_Age(df):
+def hist_plot_vict_age(df):
     '''Create a histogram of the victim age when crimes had a victim'''
     plt.figure(figsize = (15, 5))
     p = df[df['Vict Age'] > 0]['Vict Age'].hist(bins = 16)
-    p.set(xlabel = 'Victim Age', ylabel = 'Number of Victims', 
+    p.set(xlabel = 'Victim Age', ylabel = 'Number of Victims',
           title = "Distribution of Victim Ages in LAPD")
     plt.xticks(ticks = [10*i for i in range(0,13)])
     plt.xlim(0,120)
