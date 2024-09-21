@@ -6,9 +6,13 @@ format:
 
 lint:
 	pylint --ignore-patterns=test_.*?py *.py
+	ruff check *.py
 
 test:
-	python -m pytest -cov=crime_analyze test_crime_analyze.py
+	python -m pytest -vv --nbval -cov=lib.py crime_analyze test_*.py PandasDescriptiveStatistics.ipynb
 
 all:
 	install format lint test
+
+# test:
+# python -m pytest -vv --nbval -cov=mylib -cov=main *.py test_*.py *.ipynb
