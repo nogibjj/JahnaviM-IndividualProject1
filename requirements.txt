@@ -10,3 +10,6 @@ pandas
 matplotlib
 plotly
 IPython
+
+nbval
+ruff
