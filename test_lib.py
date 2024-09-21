@@ -16,14 +16,14 @@ def test_print_stats():
 def test_plot_hist_time_occ():
     '''test plot_hist_TimeOcc function'''
     df = read_zip()
-    df_time = plot_hist_time_occ(df)
-    assert df_time.shape == (974477,)
+    shape_df = plot_hist_time_occ(df)
+    assert shape_df == (974477,)
 
 def test_hist_plot_vict_age():
     '''test hist_plot_VictAge function'''
     df = read_zip()
     df_vict_age = hist_plot_vict_age(df)
-    assert df_vict_age.shape == (974477,)
+    assert df_vict_age.shape == (718888,)
 
 def test_geo_plot_crime_rate():
     '''test geo_plot_CrimeRate function'''

@@ -16,6 +16,9 @@ def read_zip(zip_file = ZFILE, csv_file = CFILE):
     with zipfile.ZipFile(zip_file) as z:
         with z.open(csv_file) as f:
             df = pd.read_csv(f)
+    # Convert the time occurred column to accurate hour of the day
+        # with decimal representing accurate minute proportion of the hour
+    df['TimeOccHr'] = df['TIME OCC']//100 + df['TIME OCC']%100/60
     return df
 
 def print_stats(df):
@@ -25,10 +28,6 @@ def print_stats(df):
     print(f'Data Frame Size: {df.shape[0]} rows, {df.shape[1]} columns')
     print('This is what the first five rows look like:')
     display(df.head())
-
-    # Convert the time occurred column to accurate hour of the day
-        # with decimal representing accurate minute proportion of the hour
-    df['TimeOccHr'] = df['TIME OCC']//100 + df['TIME OCC']%100/60
 
     print('Summary Statistics by Column:')
     display(df.describe())
@@ -87,3 +86,4 @@ def hist_plot_vict_age(df):
     plt.xticks(ticks = [10*i for i in range(0,13)])
     plt.xlim(0,120)
     plt.show()
+    return df[df['Vict Age'] > 0]['Vict Age']
