@@ -8,8 +8,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-def read_zip(zip_file = 'Crime_Data_from_2020_to_Present.csv.zip',
-             csv_file = "Crime_Data_from_2020_to_Present.csv"):
+ZFILE = 'Crime_Data_from_2020_to_Present.csv.zip'
+CFILE = "Crime_Data_from_2020_to_Present.csv"
+
+def read_zip(zip_file = ZFILE, csv_file = CFILE):
     '''Read a zip file that is compressed from csv using pandas'''
     with zipfile.ZipFile(zip_file) as z:
         with z.open(csv_file) as f:
