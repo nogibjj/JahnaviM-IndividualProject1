@@ -9,7 +9,7 @@ lint:
 	ruff check *.py
 
 test:
-	python -m pytest -vv --nbval -cov=lib.py -cov=crime_analyze test_*.py PandasDescriptiveStatistics.ipynb
+	python -m pytest -vv --nbval -cov=mylib -cov=crime_analyze test_*.py PandasDescriptiveStatistics.ipynb
 
 all:
 	install format lint test

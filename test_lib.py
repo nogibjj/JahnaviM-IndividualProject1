@@ -1,6 +1,6 @@
 '''test functions in lib for accurate functionality'''
 
-from lib import plot_hist_Time_Occ, geo_plot_Crime_Rate, hist_plot_Vict_Age, print_stats, read_zip
+from mylib.lib import plot_hist_Time_Occ, geo_plot_Crime_Rate, hist_plot_Vict_Age, print_stats, read_zip
 
 def test_read_zip():
     '''test read_zip function'''
