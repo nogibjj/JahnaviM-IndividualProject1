@@ -1,9 +1,9 @@
 '''This file reads a crime dataset based on LAPD.
 It produces summary statistics and data visualizations'''
 
-from mylib.lib import print_stats,plot_hist_time_occ,geo_plot_crime_rate,hist_plot_vict_age
+from mylib.lib import read_zip,print_stats,plot_hist_time_occ,geo_plot_crime_rate,hist_plot_vict_age
 
-df = read_zip()
+# df = read_zip()
 
 print_stats(df)
 
