@@ -1,15 +1,15 @@
 name: INSTALL
 on:
-    push:
-        branches: ["main"]
-    pull_request:
-        branches: ["main"]
-    workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v3
-        - name: install packages
-          run: make install
+    - uses: actions/checkout@v3
+    - name: install packages
+      run: make install
