@@ -29,6 +29,7 @@ def print_stats(df):
 
     print('Summary Statistics by Column:')
     display(df.describe())
+    return df.describe()
 
 def plot_hist_TimeOcc(df):
     '''Plot a histogram of when the crimes occured in LA'''
@@ -37,6 +38,7 @@ def plot_hist_TimeOcc(df):
     h.set(xlabel = "Hour of Day", ylabel = "Crime Occurences", title = "Distribution of Crime Occurences over Time of Day")
     plt.xticks(ticks = [2*i for i in range(13)])
     plt.show()
+    return df['TimeOccHr'].shape
 
 def geo_plot_CrimeRate(df):
     '''Creat a geoplot of the crime rate in LA based on latitude/longitude location'''
@@ -69,6 +71,7 @@ def geo_plot_CrimeRate(df):
     fig.update_layout(mapbox_style="carto-positron")
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     fig.show()
+    return df_graph
 
 def hist_plot_VictAge(df):
     '''Create a histogram of the victim age when crimes had a victim'''
