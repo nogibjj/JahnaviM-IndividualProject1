@@ -28,5 +28,5 @@ def test_hist_plot_vict_age():
 def test_geo_plot_crime_rate():
     '''test geo_plot_CrimeRate function'''
     df = read_zip()
-    df_graph = plot_hist_time_occ(df)
+    df_graph = geo_plot_crime_rate(df)
     assert df_graph.shape == (78024, 5)
