@@ -3,7 +3,7 @@ This project was originally started for the course, IDS 702: Data Engineering.
 The purpose of this project is to provide analysis on a dataset using pandas and Jupyter notebooks in a python project template with a strong build system.
 This creates a base feedback loop every time I update my project.
 
-[![Youtube Link](https://youtu.be/4XGyzHbjy24)]
+[Youtube Link](https://youtu.be/4XGyzHbjy24)
 
 ## Directory Tree Structure 
 ```
