@@ -3,6 +3,8 @@ This project was originally started for the course, IDS 702: Data Engineering.
 The purpose of this project is to provide analysis on a dataset using pandas and Jupyter notebooks in a python project template with a strong build system.
 This creates a base feedback loop every time I update my project.
 
+[![Youtube Link](https://youtu.be/4XGyzHbjy24)]
+
 ## Directory Tree Structure 
 ```
 JahnaviM-IndividualProject1/
@@ -33,7 +35,6 @@ JahnaviM-IndividualProject1/
 ```
 
 ## CI/CD Badges
-[![CI](https://github.com/nogibjj/JahnaviM-MiniProject2/actions/workflows/ex.yml/badge.svg)](https://github.com/nogibjj/JahnaviM-MiniProject2/actions/workflows/ex.yml)
 [![FORMAT](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/format.yml) [![INSTALL](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/install.yml) [![LINT](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/lint.yml) [![TEST](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/JahnaviM-IndividualProject1/actions/workflows/test.yml)
 
 
