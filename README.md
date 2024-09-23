@@ -39,4 +39,4 @@ JahnaviM-IndividualProject1/
 
 
 ## Instructions for Use
-To use this repository to generate the analysis, start by cloning the repository. Make sure all the requirements in requirements.txt are fulfilled as these are necessary libraries to run the python script. Finally, run the script, crime_analyze.py, and review the statistics and visualizations. For more information around these insights, look at Summary.md. To see the code and visualizations side by side, look at the Python Notebook, PandasDescriptiveStatistics.ipynb
+To use this repository to generate the analysis, start by cloning the repository. Make sure all the requirements in requirements.txt are fulfilled as these are necessary libraries to run the python script. Alternatively, use a codespace and ensure requirements are fulfilled. Finally, run the script, crime_analyze.py, and review the statistics and visualizations. For more information around these insights, look at Summary.md. To see the code and visualizations side by side, look at the Python Notebook, PandasDescriptiveStatistics.ipynb
